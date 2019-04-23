@@ -1,3 +1,27 @@
+# はじめに(iwazaki wrote)
+
+Pythonで学ぶ強化学習のリポジトリにDocker環境を付け加えた。
+Docker 上ではJupyter Labが動く。
+
+**注意** Jupyter Labのパスワードは設定していないので、外部に公開しているサーバーでは使用しないでください。パスワードを変えたい場合はdocker-compose.ymlでJupyter Labの起動時の引数を変更してください。
+
+イメージのビルド
+
+```bash
+docker-compose build
+```
+
+コンテナの起動
+
+```bash
+docker-compose up -d
+```
+
+jupyter labへのアクセス
+
+[localhost](http://localhost:8889)
+
+
 # Pythonで学ぶ強化学習 -入門から実践まで-
 
 [Pythonで学ぶ強化学習 -入門から実践まで-](https://www.amazon.co.jp/dp/4065142989/)の実装コードリポジトリです。
@@ -26,7 +50,7 @@
 * [Day6: 強化学習の弱点を克服するための手法](https://github.com/icoxfog417/baby-steps-of-rl-ja#day6-%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92%E3%81%AE%E5%BC%B1%E7%82%B9%E3%82%92%E5%85%8B%E6%9C%8D%E3%81%99%E3%82%8B%E3%81%9F%E3%82%81%E3%81%AE%E6%89%8B%E6%B3%95)
 * [Day7: 強化学習の活用領域](https://github.com/icoxfog417/baby-steps-of-rl-ja#day7-%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92%E3%81%AE%E6%B4%BB%E7%94%A8%E9%A0%98%E5%9F%9F)
 
-[Support Content](https://github.com/icoxfog417/baby-steps-of-rl-ja#support-content)  
+[Support Content](https://github.com/icoxfog417/baby-steps-of-rl-ja#support-content)
 
 ## Setup
 
@@ -153,7 +177,7 @@ python welcome.py
 * [価値の定義: Bellman Equationの実装](https://github.com/icoxfog417/baby-steps-of-rl-ja/blob/master/DP/bellman_equation.py)
 * [価値反復法(Value Iteration)、戦略反復法(Policy Iteration)の実装](https://github.com/icoxfog417/baby-steps-of-rl-ja/blob/master/DP/planner.py)
 
-Value Iteration/Policy Iterationについて実行結果を試せるシミュレーターを用意しています。  
+Value Iteration/Policy Iterationについて実行結果を試せるシミュレーターを用意しています。
 以下のスクリプトを実行し、立ち上がったサーバーにアクセスしてみてください。
 
 ```
